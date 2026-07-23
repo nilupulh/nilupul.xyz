@@ -1,10 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nilupul's Tech Startup</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* ලස්සන Dark Blue gradient එකක් */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1); /* වීදුරුවක් වගේ පෙනෙන (Glassmorphism) effect එක */
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            width: 80%;
+            max-width: 500px;
+        }
+        h1 {
+            margin: 0 0 15px 0;
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+        p {
+            margin: 0;
+            font-size: 16px;
+            color: #d1d8e0;
+            line-height: 1.5;
+        }
+        .highlight {
+            color: #00d2ff;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Nilupul.xyz!</h1>
+    <div class="container">
+        <h1>Welcome to <span class="highlight">Nilupul.xyz</span></h1>
+        <p>Innovation starts here.<br>Our new tech startup is coming soon!</p>
+    </div>
 </body>
 </html>
-
