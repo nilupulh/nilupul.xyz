@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nilupul's Tech Startup</title>
+    <title>Nilupul Hettiarachchi</title>
     <style>
         body {
             margin: 0;
@@ -11,68 +11,72 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background: #0f172a; /* Modern dark background */
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: white;
-            text-align: center;
+            min-height: 100vh;
+            background-color: #f9f9f6; /* Off-white / Cream background */
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #1a1a1a;
         }
         .container {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 40px 30px;
-            border-radius: 20px;
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
             width: 85%;
-            max-width: 450px;
+            max-width: 600px;
+            text-align: left; /* වම් පසට පෙළගස්වා ඇත */
+            padding: 20px;
         }
-        /* උඩින් තියෙන පොඩි Badge එක */
-        .badge {
-            display: inline-block;
-            background: rgba(0, 210, 255, 0.1);
-            color: #00d2ff;
-            padding: 6px 15px;
-            border-radius: 20px;
-            font-size: 12px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            border: 1px solid rgba(0, 210, 255, 0.3);
-        }
-        .greeting {
-            font-size: 20px;
-            color: #94a3b8;
+        .intro {
+            font-size: 28px;
+            font-weight: 700;
             margin-bottom: 5px;
+            color: #1a1a1a;
         }
-        h1 {
-            margin: 0 0 15px 0;
-            font-size: 32px;
-            line-height: 1.3;
+        .name {
+            font-size: 65px;
+            font-weight: 800;
+            line-height: 1.05;
+            margin-bottom: 30px;
+            letter-spacing: -1.5px;
         }
-        /* නමට දීලා තියෙන ලස්සන Gradient Effect එක */
-        .name-highlight {
-            background: linear-gradient(90deg, #00d2ff, #3a7bd5);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            display: inline-block;
+        .subtitle {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 40px;
+            letter-spacing: 0.5px;
         }
-        p {
-            margin: 0;
-            font-size: 15px;
-            color: #cbd5e1;
-            line-height: 1.6;
+        .description {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1a1a1a;
+            line-height: 1.5;
+        }
+        
+        /* ෆෝන් එකෙන් බලද්දී අකුරු ගැලපෙන සයිස් එකට හැදීම */
+        @media (max-width: 600px) {
+            .name {
+                font-size: 50px;
+            }
+            .intro {
+                font-size: 24px;
+            }
+            .subtitle {
+                font-size: 16px;
+                margin-bottom: 35px;
+            }
+            .description {
+                font-size: 18px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="badge">Tech Startup</div>
+        <div class="intro">I'm</div>
+        <div class="name">Nilupul<br>Hettiarachchi</div>
         
-        <div class="greeting">Hello,</div>
-        <h1>I'm <span class="name-highlight">Nilupul Hettiarachchi</span></h1>
+        <div class="subtitle">// Welcome to nilupul.xyz</div>
         
-        <p>Welcome to <strong>Nilupul.xyz</strong><br>Innovation starts here. We are building the future of tech.</p>
+        <div class="description">
+            Innovation starts here.<br>Building the future of tech.
+        </div>
     </div>
 </body>
 </html>
