@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nilupul Hettiarachchi</title>
+    <!-- Favicon එක සඳහා -->
+    <link rel="icon" type="image/png" href="favicon.png">
     <style>
         body {
             margin: 0;
@@ -12,70 +14,98 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-color: #f9f9f6; /* Off-white / Cream background */
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            color: #1a1a1a;
+            background-color: #0d1117; /* GitHub Dark Background */
+            font-family: 'Courier New', Courier, monospace;
+            color: #c9d1d9;
         }
-        .container {
-            width: 85%;
-            max-width: 600px;
-            text-align: left; /* වම් පසට පෙළගස්වා ඇත */
-            padding: 20px;
+        .terminal-window {
+            width: 90%;
+            max-width: 500px;
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+            overflow: hidden;
         }
-        .intro {
-            font-size: 28px;
-            font-weight: 700;
-            margin-bottom: 5px;
-            color: #1a1a1a;
+        .terminal-header {
+            background-color: #21262d;
+            padding: 12px 15px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #30363d;
+        }
+        .terminal-buttons {
+            display: flex;
+            gap: 8px;
+        }
+        .btn {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        .btn-red { background-color: #ff5f56; }
+        .btn-yellow { background-color: #ffbd2e; }
+        .btn-green { background-color: #27c93f; }
+        .terminal-title {
+            margin-left: 15px;
+            font-size: 13px;
+            color: #8b949e;
+        }
+        .terminal-body {
+            padding: 25px;
+            line-height: 1.7;
+            font-size: 14px;
         }
         .name {
-            font-size: 65px;
-            font-weight: 800;
-            line-height: 1.05;
-            margin-bottom: 30px;
-            letter-spacing: -1.5px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #58a6ff;
+            margin-bottom: 15px;
         }
-        .subtitle {
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 18px;
-            color: #666;
-            margin-bottom: 40px;
-            letter-spacing: 0.5px;
+        .trait {
+            color: #79c0ff;
+            margin-bottom: 6px;
         }
         .description {
-            font-size: 20px;
-            font-weight: 600;
-            color: #1a1a1a;
-            line-height: 1.5;
+            margin-top: 20px;
+            color: #a5d6ff;
         }
-        
-        /* ෆෝන් එකෙන් බලද්දී අකුරු ගැලපෙන සයිස් එකට හැදීම */
-        @media (max-width: 600px) {
-            .name {
-                font-size: 50px;
-            }
-            .intro {
-                font-size: 24px;
-            }
-            .subtitle {
-                font-size: 16px;
-                margin-bottom: 35px;
-            }
-            .description {
-                font-size: 18px;
-            }
+        /* බ්ලින්ක් වන කර්සරය (Cursor) */
+        .cursor {
+            display: inline-block;
+            width: 8px;
+            height: 15px;
+            background-color: #58a6ff;
+            animation: blink 1s infinite;
+            vertical-align: middle;
+            margin-left: 4px;
+        }
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="intro">I'm</div>
-        <div class="name">Nilupul<br>Hettiarachchi</div>
-        
-        <div class="subtitle">// Welcome to nilupul.xyz</div>
-        
-        <div class="description">
-            Innovation starts here.<br>Building the future of tech.
+    <div class="terminal-window">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <div class="btn btn-red"></div>
+                <div class="btn btn-yellow"></div>
+                <div class="btn btn-green"></div>
+            </div>
+            <div class="terminal-title">nilupul@portfolio ~ bash</div>
+        </div>
+        <div class="terminal-body">
+            <div class="name">Nilupul Hettiarachchi</div>
+            <div class="trait">&gt; Curious Mind</div>
+            <div class="trait">&gt; Technology Enthusiast</div>
+            <div class="trait">&gt; Lifelong Learner</div>
+            <br>
+            <div class="description">
+                Exploring technology.<br>
+                Creating what's next<span class="cursor"></span>
+            </div>
         </div>
     </div>
 </body>
