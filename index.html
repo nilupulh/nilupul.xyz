@@ -12,53 +12,67 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            background: #0f172a; /* Modern dark background */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: white;
             text-align: center;
         }
         .container {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 40px 30px;
             border-radius: 20px;
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.18);
-            width: 80%;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            width: 85%;
             max-width: 450px;
         }
-        h1 {
-            margin: 0 0 5px 0;
-            font-size: 28px;
+        /* උඩින් තියෙන පොඩි Badge එක */
+        .badge {
+            display: inline-block;
+            background: rgba(0, 210, 255, 0.1);
+            color: #00d2ff;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 12px;
             letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            border: 1px solid rgba(0, 210, 255, 0.3);
         }
-        .founder-name {
-            font-size: 16px;
-            color: #a8c0ff; /* ලා නිල් පාටින් නම පෙන්වීමට */
-            margin: 0 0 20px 0;
-            font-weight: 500;
-            letter-spacing: 2px;
-            text-transform: uppercase; /* අකුරු සියල්ල කැපිටල් කිරීම */
+        .greeting {
+            font-size: 20px;
+            color: #94a3b8;
+            margin-bottom: 5px;
+        }
+        h1 {
+            margin: 0 0 15px 0;
+            font-size: 32px;
+            line-height: 1.3;
+        }
+        /* නමට දීලා තියෙන ලස්සන Gradient Effect එක */
+        .name-highlight {
+            background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
         }
         p {
             margin: 0;
             font-size: 15px;
-            color: #d1d8e0;
+            color: #cbd5e1;
             line-height: 1.6;
-        }
-        .highlight {
-            color: #00d2ff;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to <span class="highlight">Nilupul.xyz</span></h1>
+        <div class="badge">Tech Startup</div>
         
-        <!-- ඔයාගේ සම්පූර්ණ නම මෙතන තියෙනවා -->
-        <div class="founder-name">Nilupul Hettiarachchi</div>
+        <div class="greeting">Hello,</div>
+        <h1>I'm <span class="name-highlight">Nilupul Hettiarachchi</span></h1>
         
-        <p>Innovation starts here.<br>Our new tech startup is coming soon!</p>
+        <p>Welcome to <strong>Nilupul.xyz</strong><br>Innovation starts here. We are building the future of tech.</p>
     </div>
 </body>
 </html>
