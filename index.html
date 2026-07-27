@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nilupul Hettiarachchi</title>
+<meta name="description" content="Nilupul Hettiarachchi - Personal website.">
 <style>
   * {
     margin: 0;
@@ -11,113 +12,61 @@
     box-sizing: border-box;
   }
 
+  html, body {
+    height: 100%;
+  }
+
   body {
-    background: #f4f3ef;
-    color: #111111;
+    background: #0d0d0d;
+    color: #cfcfcf;
     font-family: 'Courier New', Courier, monospace;
-    min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 40px;
+    justify-content: center;
+    padding: 40px 20px;
   }
 
   .content {
+    width: 100%;
     max-width: 700px;
   }
 
-  .code-line {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    white-space: pre-wrap;
-  }
-
-  .kw     { color: #a626a4; }   /* keyword */
-  .var    { color: #111111; }   /* variable name */
-  .op     { color: #555555; }   /* operators / punctuation */
-  .str    { color: #50a14f; }   /* string */
-  .prop   { color: #986801; }   /* property */
-  .comment{ color: #999999; }
-
   .intro {
-    font-family: 'Courier New', Courier, monospace;
     font-size: 1rem;
-    color: #777777;
-    margin-bottom: 10px;
+    color: #888888;
+    margin-bottom: 12px;
     letter-spacing: 1px;
-    opacity: 0;
-    animation: fadeUp 0.6s ease forwards;
-    animation-delay: 0.1s;
-  }
-
-  .intro::before {
-    content: "// ";
   }
 
   .name-big {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    font-size: 3rem;
-    font-weight: 800;
-    margin: 20px 0;
-    color: #111111;
-    opacity: 0;
-    animation: fadeUp 0.6s ease forwards;
-    animation-delay: 0.3s;
-  }
-
-  .name-big span {
-    color: #a3a3a3;
-  }
-
-  .divider {
-    width: 60px;
-    height: 3px;
-    background: #111111;
-    margin: 25px 0;
-    opacity: 0;
-    animation: fadeUp 0.6s ease forwards, growLine 0.6s ease forwards;
-    animation-delay: 0.5s, 0.5s;
+    font-size: 2.6rem;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #f2f2f2;
+    margin-bottom: 30px;
   }
 
   .x-link {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    color: #555555;
+    color: #888888;
     text-decoration: none;
     font-size: 0.95rem;
     letter-spacing: 1px;
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid #333333;
     padding-bottom: 3px;
     transition: color 0.2s ease, border-color 0.2s ease;
-    opacity: 0;
-    animation: fadeUp 0.6s ease forwards;
-    animation-delay: 0.7s;
-  }
-
-  @keyframes fadeUp {
-    from {
-      opacity: 0;
-      transform: translateY(12px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes growLine {
-    from { width: 0; }
-    to { width: 60px; }
   }
 
   .x-link:hover {
-    color: #111111;
-    border-color: #111111;
+    color: #f2f2f2;
+    border-color: #f2f2f2;
   }
 
   .x-link svg {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     fill: currentColor;
   }
 </style>
@@ -126,10 +75,7 @@
 
   <div class="content">
     <div class="intro">Hi, I'm</div>
-    <div class="name-big">Nilupul <span>Hettiarachchi</span></div>
-
-    <div class="divider"></div>
-
+    <div class="name-big">Nilupul Hettiarachchi</div>
     <a class="x-link" href="https://x.com/nilupulhet" target="_blank" rel="noopener noreferrer">
       <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
       @nilupulhet
