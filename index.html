@@ -17,68 +17,113 @@
   }
 
   body {
-    background: #0d0d0d;
-    color: #cfcfcf;
-    font-family: 'Courier New', Courier, monospace;
+    background: radial-gradient(ellipse at 30% 30%, #1a1a1a 0%, #000000 70%);
+    color: #ffffff;
+    font-family: 'Segoe UI', Arial, sans-serif;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 20px;
+    align-items: flex-end;
+    min-height: 100vh;
+    padding: 60px 30px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .stars {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image:
+      radial-gradient(1px 1px at 20% 30%, #ffffff 100%, transparent),
+      radial-gradient(1px 1px at 70% 10%, #ffffff 100%, transparent),
+      radial-gradient(1px 1px at 40% 80%, #ffffff 100%, transparent),
+      radial-gradient(1px 1px at 90% 60%, #ffffff 100%, transparent),
+      radial-gradient(1px 1px at 55% 45%, #ffffff 100%, transparent),
+      radial-gradient(1px 1px at 15% 65%, #ffffff 100%, transparent),
+      radial-gradient(1px 1px at 85% 85%, #ffffff 100%, transparent),
+      radial-gradient(1px 1px at 60% 20%, #ffffff 100%, transparent);
+    background-repeat: repeat;
+    background-size: 300px 300px;
+    opacity: 0.5;
+    z-index: 0;
+    animation: twinkle 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes twinkle {
+    0% { opacity: 0.3; }
+    50% { opacity: 0.7; }
+    100% { opacity: 0.4; }
   }
 
   .content {
-    width: 100%;
-    max-width: 700px;
+    position: relative;
+    z-index: 1;
+    max-width: 750px;
   }
 
   .intro {
-    font-size: 1rem;
-    color: #888888;
-    margin-bottom: 12px;
+    font-size: 1.1rem;
+    color: #999999;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+
+  .heading {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.1;
     letter-spacing: 1px;
   }
 
-  .name-big {
-    font-size: 2.6rem;
-    font-weight: bold;
-    line-height: 1.2;
-    color: #f2f2f2;
-    margin-bottom: 30px;
+  .subtext {
+    margin-top: 25px;
+    font-size: 1.1rem;
+    color: #cccccc;
+    line-height: 1.6;
+    max-width: 550px;
   }
 
-  .x-link {
+  .btn {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    color: #888888;
+    justify-content: center;
+    margin-top: 35px;
+    padding: 14px;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
     text-decoration: none;
-    font-size: 0.95rem;
-    letter-spacing: 1px;
-    border-bottom: 1px solid #333333;
-    padding-bottom: 3px;
-    transition: color 0.2s ease, border-color 0.2s ease;
+    transition: background 0.2s ease, color 0.2s ease;
   }
 
-  .x-link:hover {
-    color: #f2f2f2;
-    border-color: #f2f2f2;
+  .btn:hover {
+    background: #ffffff;
+    color: #000000;
   }
 
-  .x-link svg {
-    width: 16px;
-    height: 16px;
-    fill: currentColor;
+  @media (max-width: 480px) {
+    .heading {
+      font-size: 2.1rem;
+    }
+    body {
+      padding: 40px 20px;
+    }
   }
 </style>
 </head>
 <body>
 
+  <div class="stars"></div>
+
   <div class="content">
     <div class="intro">Hi, I'm</div>
-    <div class="name-big">Nilupul Hettiarachchi</div>
-    <a class="x-link" href="https://x.com/nilupulhet" target="_blank" rel="noopener noreferrer">
-      <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-      @nilupulhet
+    <div class="heading">Nilupul Hettiarachchi</div>
+    <div class="subtext">
+      I am a beginner in the IT field with a passion for learning technology and developing my skills.
+    </div>
+    <a class="btn" href="https://x.com/nilupulhet" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
     </a>
   </div>
 
